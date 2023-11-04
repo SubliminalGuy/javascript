@@ -1,9 +1,9 @@
-const { createRandomArray, sumArray } = require("../src/kata");
+const { createRandomArray, sumChecker } = require("../src/kata");
 
 describe("Kata", function () {
-  it("array is created", function () {
+  it("array is created and contains not only zeros", function () {
     var result = createRandomArray(3, 3);
     expect(result.length).toBe(3);
-    expect(sumArray(result)).toBeGreaterThanOrEqual(1);
+    expect(sumChecker(result)).toBeGreaterThanOrEqual(1);
   });
 });

@@ -8,15 +8,14 @@ const createRandomArray = (x, y) => {
   return grid;
 };
 
-const sumArray = (myArray) => {
+const sumChecker = (myArray) => {
   let sum = 0;
   // iterate over each item in the array
   for (let j = 0; j < myArray[0].length; j++) {
-    console.log(myArray[0][j]);
     sum += myArray[0][j];
   }
-  console.log(sum);
+
   return sum;
 };
 
-module.exports = { createRandomArray, sumArray };
+module.exports = { createRandomArray, sumChecker };
