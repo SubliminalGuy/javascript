@@ -16,7 +16,7 @@ const sumChecker = (myArray) => {
       sum += myArray[i][j];
     }
   }
-  console.log(sum);
+
   return sum;
 };
 
