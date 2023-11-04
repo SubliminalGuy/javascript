@@ -11,10 +11,12 @@ const createRandomArray = (x, y) => {
 const sumChecker = (myArray) => {
   let sum = 0;
   // iterate over each item in the array
-  for (let j = 0; j < myArray[0].length; j++) {
-    sum += myArray[0][j];
+  for (let i = 0; i < myArray.length; i++) {
+    for (let j = 0; j < myArray[i].length; j++) {
+      sum += myArray[i][j];
+    }
   }
-
+  console.log(sum);
   return sum;
 };
 
