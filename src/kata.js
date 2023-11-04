@@ -10,12 +10,12 @@ const createRandomArray = (x, y) => {
 
 const sumArray = (myArray) => {
   let sum = 0;
-  console.log("MYARRAY", myArray[0]);
+
   // iterate over each item in the array
   for (let j = 0; j < myArray[0]; j++) {
-    sum += myArray[0];
+    sum += myArray[j];
   }
-
+  console.log(sum);
   return sum;
 };
 
