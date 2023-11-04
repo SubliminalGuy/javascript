@@ -12,10 +12,18 @@ const sumArray = (myArray) => {
   let sum = 0;
   // iterate over each item in the array
   for (let j = 0; j < myArray.length; j++) {
-    sum += myArray[j];
+    sum += myArray[0];
   }
 
   return sum;
 };
+
+console.log(
+  sumArray([
+    [1, 0, 0],
+    [0, 0, 1],
+    [0, 1, 1],
+  ])
+);
 
 module.exports = { createRandomArray, sumArray };
