@@ -4,6 +4,6 @@ describe("Kata", function () {
   it("array is created", function () {
     var result = createRandomArray(3, 3);
     expect(result.length).toBe(3);
-    expect(sumArray(result[0])).toBeGreaterThan(1);
+    expect(sumArray(result)).toBeGreaterThan(1);
   });
 });
