@@ -1,4 +1,4 @@
-const createZeroArray = (x, y) => {
+const createRandomArray = (x, y) => {
   let grid = [];
   for (let i = 0; i < x; i++) {
     let randomArray = Array.from(Array(y), () => (Math.random() > 0.5 ? 1 : 0));
@@ -8,4 +8,14 @@ const createZeroArray = (x, y) => {
   return grid;
 };
 
-module.exports = { createZeroArray };
+const sumArray = (myArray) => {
+  let sum = 0;
+  // iterate over each item in the array
+  for (let j = 0; j < myArray.length; i++) {
+    sum += myArray[i];
+  }
+
+  return sum;
+};
+
+module.exports = { createRandomArray, sumArray };
