@@ -1,8 +1,8 @@
-const { renameMe } = require('../src/kata');
+const { createZeroArray } = require("../src/kata");
 
 describe("Kata", function () {
-  it("change_this_name", function () {
-   var result = renameMe();
-      expect(result).toBe(true);
+  it("array is created", function () {
+    var result = createZeroArray();
+    expect(result.length).toBe(3);
   });
 });
