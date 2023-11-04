@@ -11,8 +11,8 @@ const createRandomArray = (x, y) => {
 const sumArray = (myArray) => {
   let sum = 0;
   // iterate over each item in the array
-  for (let j = 0; j < myArray.length; i++) {
-    sum += myArray[i];
+  for (let j = 0; j < myArray.length; j++) {
+    sum += myArray[j];
   }
 
   return sum;
